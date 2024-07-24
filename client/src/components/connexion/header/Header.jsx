@@ -1,4 +1,4 @@
-import Patoune from "../assets/logo/1patounes.png";
+import Patoune from "../../../assets/logo/1patounes.png";
 import styles from './Header.module.css';
 
 function Header() {

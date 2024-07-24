@@ -1,6 +1,6 @@
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Form from "../../components/Form";
+import Header from "../../components/connexion/header/Header";
+import Footer from "../../components/connexion/footer/Footer";
+import Form from "../../components/connexion/form/Form";
 
 // Import Hook
 import useForm from "../../hooks/useForm";

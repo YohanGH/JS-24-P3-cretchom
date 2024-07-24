@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { toast } from "react-toastify";
 import PropTypes from "prop-types";
 import styles from "./ProfileHeader.module.css";
-import DeleteProfile from "./deleteProfile/DeleteProfile";
+import DeleteProfile from "../deleteProfile/DeleteProfile";
 import InputFile from "../inputFile/InputFile";
 import { AuthentificationContext } from "../../../context/authentification";
 

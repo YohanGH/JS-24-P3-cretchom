@@ -1,0 +1,179 @@
+#resaH4 {
+  font-weight: bold;
+  margin-right: 2%;
+  position: relative;
+  bottom: 15px;
+}
+
+#totalPrice {
+  font-size: 2em;
+}
+
+#reservation {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  min-height: 15vh;
+  display: flex;
+  width: 100%;
+  max-width: 530px;
+}
+
+#userChoice {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 4px;
+}
+
+#reservationPets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+
+#reservationForm {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#reservationButton:hover {
+  background: linear-gradient(to right, #e37acc, #08256e);
+  border: none;
+  color: white;
+}
+
+#datesChoice {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#datesChoice,
+.reservationDate {
+  font-size: 0.95em;
+}
+
+.reservationDate {
+  display: flex;
+  margin: 0 2% 0 2%;
+  border: none;
+}
+
+.reservationInput,
+.datesInput {
+  text-align: center;
+  padding: 0.9em;
+  margin-top: 3%;
+  flex-direction: row;
+}
+
+.reservationInput {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.reservationInput > p {
+  padding-left: 33%;
+}
+
+.datesInput {
+  width: 25vw;
+  min-width: 150px;
+}
+#detailsLine {
+  margin: 3% 0% 5% 0;
+}
+
+#reservationDetails {
+  display: none;
+}
+
+#authDenied {
+  color: red;
+  margin: 5% 0;
+  width: 80%;
+  font-size: 1.2em;
+}
+
+#deniedLink {
+  margin: 5% 0;
+  margin-top: 5%;
+  margin-right: 0px;
+  margin-left: 0px;
+  font-size: 1.5em;
+  background-color: var(--secondary-color);
+  padding: 0.6em;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+  #resaH4 {
+    margin-right: 2%;
+  }
+
+  #reservationDetails {
+    display: block;
+    text-align: left;
+    margin-top: 20%;
+  }
+
+  #reservation {
+    min-height: 53vh;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-right: 1em;
+    width: 80%;
+    min-width: 310px;
+  }
+
+  #reservationForm {
+    flex-direction: column;
+    width: unset;
+  }
+  #reservationPets {
+    text-align: center;
+    margin-bottom: 15%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8vh;
+    margin: 5% 0 13% 0;
+  }
+  .reservationInput {
+    padding: 0.7em;
+    max-width: 200px;
+  }
+  .datesInput {
+    width: 70%;
+    max-width: 215px;
+  }
+  #reservationButton {
+    width: 50%;
+  }
+  #userChoice {
+    width: unset;
+  }
+  #datesChoice {
+    justify-content: center;
+  }
+  #totalPrice {
+    margin-bottom: 5%;
+  }
+  #reservation {
+    padding: 2em 1em;
+  }
+  #authDenied {
+    font-size: 1.3em;
+  }
+}
