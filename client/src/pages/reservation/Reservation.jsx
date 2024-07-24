@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { toast } from 'react-toastify';
 import styles from "./Reservation.module.css";
-import HeaderReservation from "../../components/reservation_page/header";
-import AnimalDetails from "../../components/reservation_page/animal_details/AnimalDetails";
-import CancelButton from "../../components/reservation_page/cancel_button/CancelButton";
+import HeaderReservation from "../../components/reservation/header";
+import AnimalDetails from "../../components/reservation/animalDetails/AnimalDetails";
+import CancelButton from "../../components/reservation/cancelButton/CancelButton";
 
 function Reservation() {
   const statusMap = {

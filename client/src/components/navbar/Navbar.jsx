@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import { AuthentificationContext } from "../../use_context/authentification";
 import Bell from "../../assets/images/cloche.png";
 import BellAlert from "../../assets/images/clocheAlerte.png";
-import "./NavMenu.css";
+import "./Navbar.css";
 
 function NavMenu() {
   const { auth, update, setUpdate } = useContext(AuthentificationContext);

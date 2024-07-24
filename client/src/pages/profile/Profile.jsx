@@ -3,13 +3,13 @@ import { useLoaderData, useParams, Link } from "react-router-dom";
 import { toast } from 'react-toastify';
 
 import styles from "./Profile.module.css";
-import ProfileHeader from "../../components/profile/profile_header/ProfileHeader";
-import ProfileSection from "../../components/profile/profile_section/ProfileSection";
-import EditableField from "../../components/profile/editable_field/EditableField";
-import EditableTextarea from "../../components/profile/editable_text_area/EditableTextarea";
-import EditableDropDown from "../../components/profile/editable_dropdown/EditableDropDown";
+import ProfileHeader from "../../components/profile/profileHeader/ProfileHeader";
+import ProfileSection from "../../components/profile/profileSection/ProfileSection";
+import EditableField from "../../components/profile/editableField/EditableField";
+import EditableTextarea from "../../components/profile/editableTextArea/EditableTextarea";
+import EditableDropDown from "../../components/profile/editableDropdown/EditableDropDown";
 import { AuthentificationContext } from "../../use_context/authentification";
-import DeleteProfile from "../../components/profile/profile_header/delete_profile/DeleteProfile";
+import DeleteProfile from "../../components/profile/profileHeader/deleteProfile/DeleteProfile";
 
 function Profile() {
   const customerdata = useLoaderData();

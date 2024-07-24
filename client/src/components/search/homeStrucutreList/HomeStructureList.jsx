@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
-import IsProfessionnal from "../is_professionnal/IsProfessional";
-import UserAnimal from "../user_animal/UserAnimal";
+import IsProfessionnal from "../isProfessionnal/IsProfessional";
+import UserAnimal from "../userAnimal/UserAnimal";
 import "./HomeStructureList.css";
 
 function HomeStructureList({ structure }) {

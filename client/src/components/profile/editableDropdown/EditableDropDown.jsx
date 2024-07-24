@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "../editable_field/EditableField.module.css";
+import styles from "../editableField/EditableField.module.css";
 
 function EditableDropDown({
   label,

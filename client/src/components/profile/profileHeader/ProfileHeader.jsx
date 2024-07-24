@@ -3,8 +3,8 @@ import { useContext } from "react";
 import { toast } from "react-toastify";
 import PropTypes from "prop-types";
 import styles from "./ProfileHeader.module.css";
-import DeleteProfile from "./delete_profile/DeleteProfile";
-import InputFile from "../input_file/InputFile";
+import DeleteProfile from "./deleteProfile/DeleteProfile";
+import InputFile from "../inputFile/InputFile";
 import { AuthentificationContext } from "../../../use_context/authentification";
 
 function ProfileHeader({

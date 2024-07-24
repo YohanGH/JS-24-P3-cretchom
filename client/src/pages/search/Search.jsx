@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import "./Search.css";
-import Filter from "../../components/search_page_components/filter/Filter";
-import HomeStructureList from "../../components/search_page_components/home_strucutre_list/HomeStructureList";
+import Filter from "../../components/search/filter/Filter";
+import HomeStructureList from "../../components/search/homeStrucutreList/HomeStructureList";
 import BtnPrev from "../../assets/images/Btn-prev.png";
 import BtnNext from "../../assets/images/Btn-next.png";
 

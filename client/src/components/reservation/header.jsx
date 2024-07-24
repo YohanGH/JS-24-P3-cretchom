@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import styles from "../../pages/reservation/Reservation.module.css";
 
-function HeaderReservation({ title }) {
+function Header({ title }) {
   return (
     <header className={styles.reservationHeader}>
       <h2 id={styles.reservationTitle}>{title}</h2>
@@ -9,8 +9,8 @@ function HeaderReservation({ title }) {
   );
 }
 
-HeaderReservation.propTypes = {
+Header.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-export default HeaderReservation;
+export default Header;
