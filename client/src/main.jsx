@@ -17,8 +17,8 @@ import Reservation from "./pages/reservation/Reservation";
 import ForgotPassword from "./pages/forgotPassword/ForgotPassword";
 import ResetPassword from "./pages/resetPassword/ResetPassword";
 
-import profileLoader from "./handlers/loader/profile_loader/profileLoader";
-import homeStructureLoader from "./handlers/loader/home_structure_loader/homeStructureLoader";
+import profileLoader from "./handlers/loader/profile/profileLoader";
+import homeStructureLoader from "./handlers/loader/homeStructure/homeStructureLoader";
 import reservationLoader from "./handlers/loader/reservation/reservationLoader";
 
 const router = createBrowserRouter([
