@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 import styles from "./StructureForm.module.css";
-import { AuthentificationContext } from "../../use_context/authentification";
+import { AuthentificationContext } from "../../context/authentification";
 
 function StructureForm() {
   const URL = import.meta.env.VITE_API_URL;

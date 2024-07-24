@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 import styles from "./SignUp.module.css";
-import { AuthentificationContext } from "../../use_context/authentification";
+import { AuthentificationContext } from "../../context/authentification";
 
 function SignUp() {
   const URL = import.meta.env.VITE_API_URL;

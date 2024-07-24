@@ -8,7 +8,7 @@ import ProfileSection from "../../components/profile/profileSection/ProfileSecti
 import EditableField from "../../components/profile/editableField/EditableField";
 import EditableTextarea from "../../components/profile/editableTextArea/EditableTextarea";
 import EditableDropDown from "../../components/profile/editableDropdown/EditableDropDown";
-import { AuthentificationContext } from "../../use_context/authentification";
+import { AuthentificationContext } from "../../context/authentification";
 import DeleteProfile from "../../components/profile/profileHeader/deleteProfile/DeleteProfile";
 
 function Profile() {

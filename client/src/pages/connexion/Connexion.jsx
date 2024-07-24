@@ -3,7 +3,7 @@ import { useState, useContext } from "react";
 import { toast } from 'react-toastify';
 import Patoune from "../../assets/logo/1patounes.png";
 import "./Connexion.css";
-import { AuthentificationContext } from "../../use_context/authentification";
+import { AuthentificationContext } from "../../context/authentification";
 
 
 function Connexion() {

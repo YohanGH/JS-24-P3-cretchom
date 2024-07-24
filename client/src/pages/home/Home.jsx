@@ -5,7 +5,7 @@ import "./Home.css";
 
 import LogoPatounes from "../../assets/logo/1patounes.png";
 import CatDog from "../../assets/images/catDog.jpg";
-import { AuthentificationContext } from "../../use_context/authentification";
+import { AuthentificationContext } from "../../context/authentification";
 
 function Home() {
   const { auth } = useContext(AuthentificationContext);

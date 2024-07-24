@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import styles from "../signUp/SignUp.module.css";
 import AnimalsFormComponent from "../../components/animalsForm/AnimalsForm";
-import { AuthentificationContext } from "../../use_context/authentification";
+import { AuthentificationContext } from "../../context/authentification";
 
 function AnimalsForm() {
   const URL = import.meta.env.VITE_API_URL;

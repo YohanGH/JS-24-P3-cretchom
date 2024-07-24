@@ -3,7 +3,7 @@ import { Outlet, useLocation} from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import NavMenu from "./components/navbar/Navbar";
-import { AuthentificationProvider } from "./use_context/authentification";
+import { AuthentificationProvider } from "./context/authentification";
 
 function App() {
   const location = useLocation();
