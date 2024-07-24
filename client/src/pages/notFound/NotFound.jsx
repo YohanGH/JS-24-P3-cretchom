@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import styles from "./NotFoundPage.module.css";
+import styles from "./NotFound.module.css";
 import dogFriends from "../../assets/images/dogFriends.png";
 
-function NotFoundPage() {
+function NotFound() {
   return (
       <div className={styles.errorPage}>
         <h1>Error 404</h1>
@@ -15,4 +15,4 @@ function NotFoundPage() {
   );
 }
 
-export default NotFoundPage;
+export default NotFound;

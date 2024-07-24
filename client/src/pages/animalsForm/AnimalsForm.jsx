@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import styles from "../sign_up/SignUp.module.css";
+import styles from "../signUp/SignUp.module.css";
 import AnimalsFormComponent from "../../components/animals_form_components/AnimalsFormComponents";
 import { AuthentificationContext } from "../../use_context/authentification";
 

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import styles from "../not_found_page/NotFoundPage.module.css";
+import styles from "../notFound/NotFound.module.css";
 import catChock from "../../assets/images/catChock.png";
 
-function ProtectedPage() {
+function Protected() {
   return (
     <div className={styles.errorPage}>
       <h1>Accès Refusé </h1>
@@ -15,4 +15,4 @@ function ProtectedPage() {
   );
 }
 
-export default ProtectedPage;
+export default Protected;

@@ -2,11 +2,11 @@ import { Link, useNavigate} from "react-router-dom";
 import { useState, useContext } from "react";
 import { toast } from 'react-toastify';
 import Patoune from "../../assets/logo/1patounes.png";
-import "./ConnexionPage.css";
+import "./Connexion.css";
 import { AuthentificationContext } from "../../use_context/authentification";
 
 
-function ConnexionPage() {
+function Connexion() {
   const URL = import.meta.env.VITE_API_URL;
   const [email, setEmail] = useState("");
   const [passwordform, setPasswordform] = useState("");
@@ -53,16 +53,16 @@ function ConnexionPage() {
 
   return (
     <>
-      <section id="headerConnexionPage">
+      <section id="headerConnexion">
         <img src={Patoune} alt="orange paw" id="connexionPatoune" />
         <h1>Connexion </h1>
       </section>
 
       <section id="connexionBody">
-        <form method="post" id="connexionPageDiv" onSubmit={handleSubmit}>
+        <form method="post" id="ConnexionDiv" onSubmit={handleSubmit}>
           <label htmlFor="mail">Adresse mail</label>
           <input
-            className="connexionPageInput"
+            className="ConnexionInput"
             type="mail"
             name="mail"
             minLength={3}
@@ -74,7 +74,7 @@ function ConnexionPage() {
 
           <label htmlFor="password">Mot de passe</label>
           <input
-            className="connexionPageInput"
+            className="ConnexionInput"
             type="password"
             name="password"
             minLength={12}
@@ -98,4 +98,4 @@ function ConnexionPage() {
   );
 }
 
-export default ConnexionPage;
+export default Connexion;

@@ -2,7 +2,7 @@ import { useState, useEffect, useContext, useReducer } from "react";
 import { useLoaderData, useParams, Link } from "react-router-dom";
 import { toast } from 'react-toastify';
 
-import styles from "./ProfilePage.module.css";
+import styles from "./Profile.module.css";
 import ProfileHeader from "../../components/profile/profile_header/ProfileHeader";
 import ProfileSection from "../../components/profile/profile_section/ProfileSection";
 import EditableField from "../../components/profile/editable_field/EditableField";
@@ -11,7 +11,7 @@ import EditableDropDown from "../../components/profile/editable_dropdown/Editabl
 import { AuthentificationContext } from "../../use_context/authentification";
 import DeleteProfile from "../../components/profile/profile_header/delete_profile/DeleteProfile";
 
-function ProfilePage() {
+function Profile() {
   const customerdata = useLoaderData();
   const { id } = useParams();
   const { auth, update, setUpdate } = useContext(AuthentificationContext);
@@ -194,7 +194,7 @@ function ProfilePage() {
   };
 
   return (
-    <div className={styles.profilePageContainer}>
+    <div className={styles.ProfileContainer}>
       <ProfileHeader
         username={state.customer.username}
         isEditMode={state.isEditMode}
@@ -373,4 +373,4 @@ function ProfilePage() {
   );
 }
 
-export default ProfilePage;
+export default Profile;

@@ -4,11 +4,11 @@
   top: 40vh;
   left: 40vw;
 }
-.profilePageContainer {
+.ProfileContainer {
   font-size: var(--base-font-size);
 }
 
-.profilePageContainer {
+.ProfileContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0px 0px;
@@ -70,7 +70,7 @@
 }
 
 @media (max-width: 1000px) {
-  .profilePageContainer {
+  .ProfileContainer {
     grid-template-columns: 530px;
     grid-template-rows: 0.3fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -83,7 +83,7 @@
 }
 
 @media (max-width: 550px) {
-  .profilePageContainer {
+  .ProfileContainer {
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -94,10 +94,10 @@
     margin: 0;
     font-size: 1.15em;
   }
-  .profilePageContainer :nth-child(3) {
+  .ProfileContainer :nth-child(3) {
     height: auto;
   }
-  .profilePageContainer :nth-child(3) {
+  .ProfileContainer :nth-child(3) {
     height: auto;
   }
 }

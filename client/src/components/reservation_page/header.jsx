@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "../../pages/reservation/ReservationPage.module.css";
+import styles from "../../pages/reservation/Reservation.module.css";
 
 function HeaderReservation({ title }) {
   return (

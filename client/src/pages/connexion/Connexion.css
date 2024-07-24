@@ -3,7 +3,7 @@
   margin-right: 15px;
 }
 
-#headerConnexionPage {
+#headerConnexion {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
   margin-top: 10vh;
 }
 
-#headerConnexionPage > h1 {
+#headerConnexion > h1 {
   font-size: 2em;
 }
 
@@ -22,7 +22,7 @@
   justify-content: center;
 }
 
-#connexionPageDiv {
+#ConnexionDiv {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -38,7 +38,7 @@
   background-repeat: no-repeat;
 }
 
-.connexionPageInput {
+.ConnexionInput {
   font-size: 1.1em;
   padding: 0.4rem;
   width: 35vw;
@@ -63,7 +63,7 @@
   font-size: 1em;
 }
 
-#connexionPageDiv > label {
+#ConnexionDiv > label {
   margin-top: 5%;
 }
 
@@ -76,20 +76,20 @@
   color: #804980;
 }
 @media screen and (min-width: 550px) and (max-width: 1100px) {
-  #connexionPageDiv {
+  #ConnexionDiv {
     width: 490px;
   }
-  .connexionPageInput {
+  .ConnexionInput {
     width: 380px;
   }
 }
 
 @media screen and (min-width: 1100px) {
-  #connexionPageDiv {
+  #ConnexionDiv {
     width: 600px;
   }
 
-  .connexionPageInput {
+  .ConnexionInput {
     width: 400px;
   }
 }

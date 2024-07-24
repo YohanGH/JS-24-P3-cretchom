@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import "./SearchPage.css";
+import "./Search.css";
 import Filter from "../../components/search_page_components/filter/Filter";
 import HomeStructureList from "../../components/search_page_components/home_strucutre_list/HomeStructureList";
 import BtnPrev from "../../assets/images/Btn-prev.png";
 import BtnNext from "../../assets/images/Btn-next.png";
 
-function SearchPage() {
+function Reservation() {
   const [allStructures, setAllStructures] = useState([]);
   const [filters, setFilters] = useState({});
   const [filteredStructures, setFilteredStructures] = useState(allStructures);
@@ -168,4 +168,4 @@ function SearchPage() {
   );
 }
 
-export default SearchPage;
+export default Reservation;
