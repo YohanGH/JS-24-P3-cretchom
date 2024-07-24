@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { AuthentificationContext } from "../../use_context/authentification";
+import { AuthentificationContext } from "../../context/authentification";
 import Bell from "../../assets/images/cloche.png";
 import BellAlert from "../../assets/images/clocheAlerte.png";
 import "./Navbar.css";

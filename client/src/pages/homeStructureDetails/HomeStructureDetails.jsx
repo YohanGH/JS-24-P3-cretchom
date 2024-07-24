@@ -7,7 +7,7 @@ import Reservation from "../../components/homeStructureDetails/Reservation";
 import UserAnimal from "../../components/search/userAnimal/UserAnimal";
 import IsProfessionnal from "../../components/search/isProfessionnal/IsProfessional";
 import "./HomeStructureDetails.css";
-import { AuthentificationContext } from "../../use_context/authentification";
+import { AuthentificationContext } from "../../context/authentification";
 
 function HomeStructureDetails() {
   const structures = useLoaderData();
