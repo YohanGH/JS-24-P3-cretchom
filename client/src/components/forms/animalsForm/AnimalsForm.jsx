@@ -1,4 +1,4 @@
-import styles from "../../pages/signUp/SignUp.module.css";
+import styles from "../../../pages/signUp/SignUp.module.css";
 
 function AnimalsFormComponent() {
   return (
