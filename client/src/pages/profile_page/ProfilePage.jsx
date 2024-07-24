@@ -153,9 +153,7 @@ function ProfilePage() {
     } catch (err) {
       console.error("Fetch error:", err);
       toast.error(
-        "Erreur lors de la suppression du profil. Veuillez réessayer plus tard.",
-        "error"
-      );
+        "Erreur lors de la suppression du profil. Veuillez réessayer plus tard.");
       return {
         error: "An error occurred during deletion. Please try again later.",
       };

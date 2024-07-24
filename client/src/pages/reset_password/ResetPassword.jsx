@@ -38,9 +38,7 @@ function ResetPassword() {
       }
     } catch (error) {
       toast.error(
-        "Une erreur est survenue lors du changement de mot de passe.",
-        "error"
-      );
+        "Une erreur est survenue lors du changement de mot de passe.");
     }
   };
 

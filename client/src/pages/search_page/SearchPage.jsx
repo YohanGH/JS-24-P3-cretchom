@@ -36,9 +36,7 @@ function SearchPage() {
         setReponseNumber(jsonData.totalRow.total);
       } catch (error) {
         toast.error(
-          "Erreur de réseau. Veuillez vérifier votre connexion.",
-          "error"
-        );
+          "Erreur de réseau. Veuillez vérifier votre connexion.",);
         console.error("Fetch error:", error);
       }
     };

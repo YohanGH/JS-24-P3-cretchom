@@ -38,7 +38,7 @@ CREATE TABLE animal (
 );
 
 CREATE TABLE reservation (
-  id INT(11) UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  id INT(11) UNSIGNED PRIMARY KEY auto_increment NOT NULL,
   reservation_date_beginning DATE NOT NULL,
   reservation_date_end DATE NOT NULL,
   home_structure_id INT(11) UNSIGNED NOT NULL, 
@@ -50,7 +50,7 @@ CREATE TABLE reservation (
 );
 
 CREATE TABLE notification (
-  id INT(11) UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  id INT(11) UNSIGNED PRIMARY KEY auto_increment NOT NULL,
   user_id INT(11) UNSIGNED NOT NULL,
   reservation_id INT(11) UNSIGNED NOT NULL,
   FOREIGN KEY (user_id) REFERENCES user(id),

@@ -57,17 +57,17 @@ function SignUp() {
 
         setUpdate(!update);
         if (buttonValue === "structure") {
-          toast.success("Votre compte à bien été créé", "success");
+          toast.success("Votre compte à bien été créé");
           return navigate(`/inscription_accueil/${userId}`);
         }
-        toast.success("Votre compte à bien été créé", "success");
+        toast.success("Votre compte à bien été créé");
         return navigate(`/formulaire-animal/${userId}`);
       }
 
       const errorData = await response.json();
-      return toast.error(errorData.validationErrors[0].message, "error");
+      return toast.error(errorData.validationErrors[0].message);
     } catch (err) {
-      return toast.error("Une erreur est survenue lors de l'inscription.", "error");
+      return toast.error("Une erreur est survenue lors de l'inscription.");
     }
   };
 

@@ -43,21 +43,19 @@ function StructureForm() {
 
       const info = await response.json();
       if (response.status === 403) {
-        return toast.error(info.validationErrors[0].message, "error");
+        return toast.error(info.validationErrors[0].message);
       }
 
       if (response.status === 201) {
         setUpdate(!update);
-        toast.success("Inscription réussie !", "success");
+        toast.success("Inscription réussie !");
         return navigate("/page-recherche");
       }
-      return toast.error(info.validationErrors[0].message, "error");
+      return toast.error(info.validationErrors[0].message);
     } catch (err) {
       console.error("Fetch error:", err);
       toast.error(
-        "Une erreur est survenue lors de l'inscription. Veuillez réessayer plus tard.",
-        "error"
-      );
+        "Une erreur est survenue lors de l'inscription. Veuillez réessayer plus tard.");
       return {
         error: "An error occurred during registration. Please try again later.",
       };

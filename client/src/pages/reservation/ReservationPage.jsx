@@ -54,9 +54,7 @@ function ReservationPage() {
       } catch (err) {
         console.error("Fetch profile error:", err);
         toast.error(
-          "Une erreur est survenue lors de la récupération des données du profil. Veuillez réessayer plus tard.",
-          "error"
-        );
+          "Une erreur est survenue lors de la récupération des données du profil. Veuillez réessayer plus tard.");
       }
     };
     reservationLoader();
@@ -109,9 +107,9 @@ function ReservationPage() {
         }),
       });
       if (response.status !== 204) {
-        toast.error("Erreur lors de la modification de la réservation", "error");
+        toast.error("Erreur lors de la modification de la réservation");
       } else {
-        toast.success("Réservation modifiée", "success");
+        toast.success("Réservation modifiée");
         setChange(!change);
       }
     } catch (err) {
@@ -135,7 +133,7 @@ function ReservationPage() {
         if (response.status === 204) {
           setChange(!change);
         } else {
-          toast.error("Une erreur est survenue", "error");
+          toast.error("Une erreur est survenue");
         }
       } catch (err) {
         console.error("Fetch error", err);
