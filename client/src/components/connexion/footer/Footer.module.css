@@ -1,0 +1,8 @@
+#connexionFooter {
+  margin-top: 6vh;
+  text-align: center;
+}
+
+#connexionFooter > a {
+  color: #804980;
+}

@@ -2,23 +2,23 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import HomePage from "./pages/home_page/HomePage";
-import StructureForm from "./pages/structure_form/StructureForm";
-import ConnexionPage from "./pages/Connexion_page/ConnexionPage";
-import SignUp from "./pages/sign_up/SignUp";
-import SearchPage from "./pages/search_page/SearchPage";
-import HomeStructureDetails from "./pages/home_structure_details/HomeStructureDetails";
-import ProfilePage from "./pages/profile_page/ProfilePage";
-import NotFoundPage from "./pages/not_found_page/NotFoundPage";
-import LegalMentions from "./pages/legal_mentions/LegalMentions";
-import AnimalsForm from "./pages/animals_form_page/AnimalsForm";
-import ProtectedPage from "./pages/protected_page/ProtectedPage";
-import ReservationPage from "./pages/reservation/ReservationPage";
-import ForgotPassword from "./pages/forgot_password/ForgotPassword";
-import ResetPassword from "./pages/reset_password/ResetPassword";
+import Home from "./pages/home/Home";
+import StructureForm from "./pages/structureForm/StructureForm";
+import Connexion from "./pages/connexion/Connexion";
+import SignUp from "./pages/signUp/SignUp";
+import Search from "./pages/search/Search";
+import HomeStructureDetails from "./pages/homeStructureDetails/HomeStructureDetails";
+import Profile from "./pages/profile/Profile";
+import NotFound from "./pages/notFound/NotFound";
+import LegalMentions from "./pages/legalMentions/LegalMentions";
+import AnimalsForm from "./pages/animalsForm/AnimalsForm";
+import Protected from "./pages/protected/Protected";
+import Reservation from "./pages/reservation/Reservation";
+import ForgotPassword from "./pages/forgotPassword/ForgotPassword";
+import ResetPassword from "./pages/resetPassword/ResetPassword";
 
-import profileLoader from "./handlers/loader/profile_loader/profileLoader";
-import homeStructureLoader from "./handlers/loader/home_structure_loader/homeStructureLoader";
+import profileLoader from "./handlers/loader/profile/profileLoader";
+import homeStructureLoader from "./handlers/loader/homeStructure/homeStructureLoader";
 import reservationLoader from "./handlers/loader/reservation/reservationLoader";
 
 const router = createBrowserRouter([
@@ -26,14 +26,14 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      { path: "/", element: <HomePage /> },
+      { path: "/", element: <Home /> },
       {
         path: "/inscription_accueil/:id",
         element: <StructureForm />,
       },
       {
         path: "/connexion",
-        element: <ConnexionPage />,
+        element: <Connexion />,
       },
       {
         path: "/formulaire-animal/:id",
@@ -45,11 +45,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/page-recherche",
-        element: <SearchPage />,
+        element: <Search />,
       },
       {
         path: "/profil/:id",
-        element: <ProfilePage />,
+        element: <Profile />,
         loader: profileLoader,
       },
       {
@@ -71,16 +71,16 @@ const router = createBrowserRouter([
       },
       {
         path: "acces_refuse",
-        element: <ProtectedPage />,
+        element: <Protected />,
       },
       {
         path: "/reservation",
-        element: <ReservationPage />,
+        element: <Reservation />,
         loader: reservationLoader,
       },
       {
         path: "*",
-        element: <NotFoundPage />,
+        element: <NotFound />,
       },
     ],
   },

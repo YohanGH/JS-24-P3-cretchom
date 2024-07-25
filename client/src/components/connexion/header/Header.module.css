@@ -1,0 +1,16 @@
+#connexionPatoune {
+  width: 50px;
+  margin-right: 15px;
+}
+
+#headerConnexion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin-top: 10vh;
+}
+
+#headerConnexion > h1 {
+  font-size: 2em;
+}
