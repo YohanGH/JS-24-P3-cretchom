@@ -1,48 +1,18 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
-import Patoune from "../../assets/logo/1patounes.png";
 import "./ForgotPassword.css";
+
+// import Hook
+import useForgotPassword from "../../hooks/useForgotPassword";
+
+// import components
+import Header from "../../components/connexion/header/Header";
 
 function ForgotPassword() {
   const URL = import.meta.env.VITE_API_URL;
-  const [email, setEmail] = useState("");
-  const navigate = useNavigate();
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch(`${URL}forgot-password`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      if (response.status === 250) {
-        toast.success(
-          "Un e-mail de réinitialisation du mot de passe a été envoyé."
-        );
-        navigate("/");
-      } else {
-        const errorData = await response.json();
-        toast.error(
-          errorData.message || "Une erreur est survenue. Veuillez réessayer."
-        );
-      }
-    } catch (err) {
-      toast.error("Une erreur est survenue. Veuillez réessayer.");
-    }
-  };
+  const { email, setEmail, handleSubmit } = useForgotPassword(URL);
 
   return (
     <div>
-      <section id="headerforgotPasswordPage">
-        <img src={Patoune} alt="orange paw" id="imgPatoune" />
-        <h1>Réinitialisation du mot de passe </h1>
-      </section>
-
+      <Header title="Réinitialisation du mot de passe" />
       <section id="forgotPasswordSection">
         <form method="post" id="forgotPassword" onSubmit={handleSubmit}>
           <label htmlFor="email">Adresse e-mail :</label>

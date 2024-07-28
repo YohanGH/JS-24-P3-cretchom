@@ -21,12 +21,16 @@ function Connexion() {
 
   return (
     <div>
-      <Header />
+      <Header title="Connexion" />
       <Form
         email={values.email}
-        onEmailChange={(value) => handleInputChange({ target: { name: "email", value } })}
+        onEmailChange={(value) =>
+          handleInputChange({ target: { name: "email", value } })
+        }
         password={values.password}
-        onPasswordChange={(value) => handleInputChange({ target: { name: "password", value } })}
+        onPasswordChange={(value) =>
+          handleInputChange({ target: { name: "password", value } })
+        }
         handleSubmit={handleSubmit}
       />
       <Footer />
